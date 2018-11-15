@@ -13,12 +13,12 @@ public class DemoController {
 
     @RequestMapping("/index")
     public String index(){
-        return "demo";
+        return "demo-index";
     }
     
     @RequestMapping("/user")
     public String user(){
-        return "list";
+        return "list-user";
     }
     
     @RequestMapping("/todo")
