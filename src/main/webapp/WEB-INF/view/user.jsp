@@ -3,6 +3,6 @@
 <html>
 <body>
 <h2>Hello user!</h2>
-用户名：${user.userName}<br>
+用户名：${user.name}<br>
 </body>
 </html>

@@ -1,24 +1,56 @@
 package com.ddc.model;
 
+import java.util.Date;
+
 public class User {
-    
-    private Integer userId;
-    private String userName;
+    private Integer id;
 
-    public Integer getUserId() {
-        return userId;
+    private String name;
+
+    private Date addTime;
+
+    private Date lastTime;
+
+    public User(Integer id, String name, Date addTime, Date lastTime) {
+        this.id = id;
+        this.name = name;
+        this.addTime = addTime;
+        this.lastTime = lastTime;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public User() {
+        super();
     }
 
-    public String getUserName() {
-        return userName;
+    public Integer getId() {
+        return id;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name == null ? null : name.trim();
+    }
+
+    public Date getAddTime() {
+        return addTime;
+    }
+
+    public void setAddTime(Date addTime) {
+        this.addTime = addTime;
+    }
+
+    public Date getLastTime() {
+        return lastTime;
+    }
+
+    public void setLastTime(Date lastTime) {
+        this.lastTime = lastTime;
+    }
 }
