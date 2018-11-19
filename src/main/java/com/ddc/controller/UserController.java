@@ -5,9 +5,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.ddc.model.Account;
-import com.ddc.model.User;
-import com.ddc.service.UserService;
+import com.ddc.model.*;
+import com.ddc.service.*;
 
 @Controller  
 public class UserController {  
@@ -15,6 +14,7 @@ public class UserController {
     @Resource  
     private UserService userService; 
     
+
 
     @RequestMapping("/user")    
     public ModelAndView getUser(){      
@@ -31,4 +31,6 @@ public class UserController {
         mav.addObject("user", account); 
         return mav; 
     }
+   
+    
 }
